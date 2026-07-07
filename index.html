@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Умный браслет для здоровья — контроль активности, сна и пульса 24/7. Скидка 15% на старте продаж.">
+  <title>HealthBand — Умный браслет для здоровья</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="HealthBand — на главную">
+        <svg class="logo__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" fill="none" stroke="#4CAF50" stroke-width="2"/>
+          <path d="M16 8v16M10 12h12M10 20h12" stroke="#4CAF50" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="logo__text">HealthBand</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link">О продукте</a></li>
+          <li><a href="#advantages" class="nav__link">Преимущества</a></li>
+          <li><a href="#reviews" class="nav__link">Отзывы</a></li>
+          <li><a href="#pricing" class="nav__link">Цена</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn btn--primary header__cta" data-modal-open>Купить</button>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content fade-in">
+          <span class="hero__badge">Новинка 2026</span>
+          <h1 class="hero__title">Ваше здоровье под полным контролем 24/7</h1>
+          <p class="hero__subtitle">Умный браслет нового поколения: отслеживайте активность, контролируйте качество сна и улучшайте самочувствие каждый день.</p>
+
+          <div class="hero__price">
+            <span class="hero__price-old">3&nbsp;990&nbsp;₽</span>
+            <span class="hero__price-new">3&nbsp;392&nbsp;₽</span>
+            <span class="hero__price-badge">−15% на старте</span>
+          </div>
+
+          <button class="btn btn--primary btn--glow" data-modal-open>Купить сейчас</button>
+        </div>
+
+        <div class="hero__visual fade-in" aria-hidden="true">
+          <div class="bracelet-placeholder">
+            <div class="bracelet-placeholder__band"></div>
+            <div class="bracelet-placeholder__screen">
+              <span class="bracelet-placeholder__heart">♥</span>
+              <span class="bracelet-placeholder__bpm">72</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section__title fade-in">Создан для вашего ритма жизни</h2>
+        <div class="cards-grid">
+
+          <article class="card fade-in">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="48" height="48"><path fill="#4CAF50" d="M24 4C13 4 4 13 4 24s9 20 20 20 20-9 20-20S35 4 24 4zm-2 30l-8-8 2.8-2.8L22 28.4l12.4-12.4L37.2 19 22 34.2z"/></svg>
+            </div>
+            <h3 class="card__title">Мониторинг сна</h3>
+            <p class="card__text">Анализ фаз глубокого и быстрого сна с персональными рекомендациями для восстановления.</p>
+          </article>
+
+          <article class="card fade-in">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="48" height="48"><path fill="#4CAF50" d="M24 6l-2 6H14l5 4-2 6 7-4 7 4-2-6 5-4h-8L24 6zm0 28c-6.6 0-12 5.4-12 12h24c0-6.6-5.4-12-12-12z"/></svg>
+            </div>
+            <h3 class="card__title">Трекинг активности</h3>
+            <p class="card__text">Шагомер, подсчёт калорий и пульсометр в реальном времени — всё в одном устройстве.</p>
+          </article>
+
+          <article class="card fade-in">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="48" height="48"><path fill="#4CAF50" d="M14 10h20v4H14v-4zm-2 8h24c1.1 0 2 .9 2 2v20c0 1.1-.9 2-2 2H12c-1.1 0-2-.9-2-2V20c0-1.1.9-2 2-2zm12 6c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6z"/></svg>
+            </div>
+            <h3 class="card__title">Автономность</h3>
+            <p class="card__text">До 14 дней работы на одном заряде — забудьте о ежедневной подзарядке.</p>
+          </article>
+
+          <article class="card fade-in">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="48" height="48"><path fill="#4CAF50" d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.84 0-16-7.16-16-16S15.16 8 24 8s16 7.16 16 16-7.16 16-16 16zm-1-26h2v14h-2V14zm0 16h2v4h-2v-4z"/></svg>
+            </div>
+            <h3 class="card__title">Защита IP68</h3>
+            <p class="card__text">Подходит для тренировок в любую погоду и плавания — надёжная защита от влаги.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Advantages -->
+    <section class="advantages section" id="advantages">
+      <div class="container">
+        <h2 class="section__title fade-in">Технологическое превосходство</h2>
+        <div class="advantages__layout">
+
+          <div class="advantages__diagram fade-in" aria-hidden="true">
+            <div class="diagram-bracelet">
+              <div class="diagram-bracelet__body"></div>
+              <button class="diagram-point diagram-point--1" data-tip="Оптический датчик пульса" aria-label="Оптический датчик пульса"></button>
+              <button class="diagram-point diagram-point--2" data-tip="Акселерометр для шагов" aria-label="Акселерометр для шагов"></button>
+              <button class="diagram-point diagram-point--3" data-tip="Датчик качества сна" aria-label="Датчик качества сна"></button>
+              <div class="diagram-tooltip" id="diagramTooltip" role="tooltip"></div>
+            </div>
+          </div>
+
+          <div class="advantages__list fade-in">
+            <div class="advantage-item">
+              <span class="advantage-item__icon" aria-hidden="true">📱</span>
+              <div>
+                <h3 class="advantage-item__title">Приложение на русском</h3>
+                <p class="advantage-item__text">Удобное мобильное приложение с понятным интерфейсом и детальной аналитикой.</p>
+              </div>
+            </div>
+            <div class="advantage-item">
+              <span class="advantage-item__icon" aria-hidden="true">🌿</span>
+              <div>
+                <h3 class="advantage-item__title">Гипоаллергенный ремешок</h3>
+                <p class="advantage-item__text">Мягкий силиконовый ремешок — комфорт при круглосуточном ношении.</p>
+              </div>
+            </div>
+            <div class="advantage-item">
+              <span class="advantage-item__icon" aria-hidden="true">🎯</span>
+              <div>
+                <h3 class="advantage-item__title">Точные измерения</h3>
+                <p class="advantage-item__text">Современные оптические датчики обеспечивают высокую точность показателей.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <h2 class="section__title fade-in">Что говорят те, кто уже изменил свою жизнь</h2>
+
+        <div class="reviews-slider fade-in">
+          <div class="reviews-slider__track" id="reviewsTrack">
+
+            <article class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__avatar" aria-hidden="true">АК</div>
+                <div>
+                  <p class="review-card__name">Анна Ковалёва</p>
+                  <p class="review-card__meta">32 года</p>
+                </div>
+              </div>
+              <div class="review-card__stars" aria-label="Оценка 5 из 5">★★★★★</div>
+              <p class="review-card__text">«Наконец-то вижу, сколько реально сплю! За месяц наладила режим — стала просыпаться бодрой. Браслет лёгкий, не мешает спать.»</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__avatar" aria-hidden="true">ДМ</div>
+                <div>
+                  <p class="review-card__name">Дмитрий Морозов</p>
+                  <p class="review-card__meta">28 лет</p>
+                </div>
+              </div>
+              <div class="review-card__stars" aria-label="Оценка 5 из 5">★★★★★</div>
+              <p class="review-card__text">«Бегаю каждое утро — пульс и калории на экране телефона. Заряд держит две недели, это просто космос. Рекомендую всем, кто в ЗОЖ.»</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__avatar" aria-hidden="true">ЕС</div>
+                <div>
+                  <p class="review-card__name">Елена Смирнова</p>
+                  <p class="review-card__meta">41 год</p>
+                </div>
+              </div>
+              <div class="review-card__stars" aria-label="Оценка 5 из 5">★★★★★</div>
+              <p class="review-card__text">«Купила мужу на день рождения — теперь оба носим. Удобно следить за активностью и напоминаниями двигаться. Приложение на русском — большой плюс!»</p>
+            </article>
+
+          </div>
+
+          <div class="reviews-slider__controls">
+            <button class="reviews-slider__btn" id="reviewsPrev" aria-label="Предыдущий отзыв">‹</button>
+            <div class="reviews-slider__dots" id="reviewsDots"></div>
+            <button class="reviews-slider__btn" id="reviewsNext" aria-label="Следующий отзыв">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="pricing-card fade-in">
+          <div class="pricing-card__ribbon">
+            <span>🔥 Скидка 15% — первая неделя продаж!</span>
+          </div>
+
+          <div class="pricing-card__body">
+            <div class="pricing-card__info">
+              <h2 class="pricing-card__title">HealthBand Pro</h2>
+              <p class="pricing-card__desc">Умный браслет для здоровья с полным набором функций: сон, пульс, активность, IP68.</p>
+
+              <ul class="pricing-card__features">
+                <li>Мониторинг сна и пульса 24/7</li>
+                <li>До 14 дней автономной работы</li>
+                <li>Мобильное приложение на русском</li>
+                <li>Гарантия 12 месяцев</li>
+              </ul>
+            </div>
+
+            <div class="pricing-card__offer">
+              <div class="pricing-card__prices">
+                <span class="pricing-card__old">3&nbsp;990&nbsp;₽</span>
+                <span class="pricing-card__new">3&nbsp;392&nbsp;₽</span>
+                <span class="pricing-card__save">Экономия 598&nbsp;₽</span>
+              </div>
+
+              <p class="pricing-card__timer-label">Акция действует:</p>
+              <div class="pricing-card__timer" id="promoTimer" aria-live="polite">
+                <div class="timer-unit"><span id="timerDays">07</span><small>дней</small></div>
+                <span class="timer-sep">:</span>
+                <div class="timer-unit"><span id="timerHours">00</span><small>часов</small></div>
+                <span class="timer-sep">:</span>
+                <div class="timer-unit"><span id="timerMinutes">00</span><small>минут</small></div>
+                <span class="timer-sep">:</span>
+                <div class="timer-unit"><span id="timerSeconds">00</span><small>секунд</small></div>
+              </div>
+
+              <button class="btn btn--primary btn--glow btn--large" data-modal-open>Заказать со скидкой</button>
+              <p class="pricing-card__note">Бесплатная доставка по России · Оплата при получении</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta section" id="buy">
+      <div class="container cta__inner fade-in">
+        <h2 class="cta__title">Сделайте шаг к здоровой жизни уже сегодня</h2>
+        <p class="cta__text">Гарантия 12 месяцев · Доставка 1–3 дня · Возврат в течение 14 дней</p>
+
+        <form class="cta-form" id="ctaForm" novalidate>
+          <input type="text" class="cta-form__input" name="name" placeholder="Ваше имя" required autocomplete="name">
+          <input type="tel" class="cta-form__input" name="phone" placeholder="Телефон" required autocomplete="tel">
+          <button type="submit" class="btn btn--primary btn--large">Оформить заказ</button>
+        </form>
+        <p class="cta-form__success" id="ctaSuccess" hidden>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo logo--footer">
+        <svg class="logo__icon" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" fill="none" stroke="#4CAF50" stroke-width="2"/>
+          <path d="M16 8v16M10 12h12M10 20h12" stroke="#4CAF50" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="logo__text">HealthBand</span>
+      </a>
+
+      <p class="footer__copy">© 2026 HealthBand. Все права защищены.</p>
+
+      <div class="footer__links">
+        <a href="#" class="footer__link">Политика конфиденциальности</a>
+        <a href="mailto:support@healthband.ru" class="footer__link">support@healthband.ru</a>
+      </div>
+
+      <div class="footer__social" aria-label="Социальные сети">
+        <a href="#" class="footer__social-link" aria-label="Telegram">TG</a>
+        <a href="#" class="footer__social-link" aria-label="ВКонтакте">VK</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Order Modal -->
+  <div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__content">
+      <button class="modal__close" data-modal-close aria-label="Закрыть">×</button>
+      <h2 class="modal__title" id="modalTitle">Быстрый заказ</h2>
+      <p class="modal__price">HealthBand Pro — <strong>3&nbsp;392&nbsp;₽</strong> <s>3&nbsp;990&nbsp;₽</s></p>
+      <form class="modal-form" id="modalForm" novalidate>
+        <input type="text" class="modal-form__input" name="name" placeholder="Ваше имя" required autocomplete="name">
+        <input type="tel" class="modal-form__input" name="phone" placeholder="Телефон" required autocomplete="tel">
+        <button type="submit" class="btn btn--primary btn--large">Оформить заказ</button>
+      </form>
+      <p class="modal-form__success" id="modalSuccess" hidden>Заявка отправлена! Мы перезвоним вам в течение 15 минут.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

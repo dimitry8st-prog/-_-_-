@@ -1,0 +1,13 @@
+# ТЗ в формате Word (бинарный файл, ~4 МБ)
+ТЗ_*.md
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
